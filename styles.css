@@ -66,11 +66,12 @@ body {
 
 .header-content {
     position: absolute;
-    top: 60%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
+    margin-top: 100px;
 }
 
 .header-content h1 {
@@ -125,13 +126,11 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-    .email-signup button {
-        margin-top: 20px;
-    }
-
-    #lang-txt {
-        display: none;
+@media screen and (max-width: 959px) {
+    .header-content h1 {
+        font-size: 30px;
+        font-weight: 700;
+        width: 100%;
     }
 
     .logo {
@@ -140,17 +139,76 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .logo {
-        width: 4.25rem;
-        height: 1.5rem;
+@media screen and (max-width: 599px) {
+    .header-content {
+        margin-top: 30px;
+    }
+
+    .email-signup input {
+        width: 100%;
+    }
+
+    .email-signup button {
+        margin-top: 20px;
+    }
+
+    #lang-txt {
+        display: none;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 472px) {
+    .header {
+        padding: 10px 6%;
+    }
+
+    .logo {
+        width: 5.8rem;
+        height: 1.4rem;
+    }
+
+    .lang-btn {
+        height: 30px;
+        margin-right: 5px;
+    }
+    
+    .lang-btn i {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+    
+    .signin-btn {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .header-content {
+        margin-top: 30px;
+    }
+
     .header-content h1 {
-        font-size: 30px;
-        font-weight: 700;
+        font-size: 25px;
+        font-weight: 600;
         width: 100%;
+    }
+
+    .header-content h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 287px) {
+    .lang-btn i {
+        margin-right: 3px;
+        font-size: 15px;
+    }
+    
+    .signin-btn {
+        font-size: 10px;
+    }
+
+    .header-content p {
+        font-size: 15px;
     }
 }
