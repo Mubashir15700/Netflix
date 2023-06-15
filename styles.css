@@ -1,119 +1,135 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-header {
-    height: 100vh;
-    width: 100%;
     box-sizing: border-box;
-    box-shadow: 5px 5px 10px #000;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
-    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 
-.banner {
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
     width: 100%;
-    height: 100%;
-    position:absolute;
-    z-index: -1; 
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/banner.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 12%;
+    position: relative;
 }
 
-.logo {
-    height: 90px;
-    width: 190px;
-}
-
-.header-sub1 {
+.header nav {
     display: flex;
     justify-content: space-between;
 }
 
-.select-btn {
-    display: flex;
-    align-items: center;
+.logo {
+    width: 9.25rem;
+    height: 2.5rem;
 }
 
-.select-img {
-    border: 1px solid gray;
+.lang-btn {
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    height: 35px;
+    width: auto;
+    padding: 0 10px;
+    font-size: 15px;
     margin-right: 20px;
-    padding: 3px 7px;
-    border-radius: 3px;
+    border: 1px solid gray;
 }
 
-.ri-global-line {
-    color: #fff;
+.lang-btn i {
+    margin-right: 5px;
+    font-size: 20px;
 }
 
-.select-btn select {
-    border: none;
-    background: none;
+.lang-btn img {
+    width: 10px;
+}
+
+.signin-btn {
+    background: #db0001;
     color: #fff;
-    background-color: #000;
-    opacity: .7;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 15px;
+    padding: 0 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.header-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.header-content h1 {
+    font-size: 40px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.header-content h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.header-content p {
+    font-size: 20px;
+}
+
+.email-signup {
+    margin-top: 20px;
+}
+
+.email-signup input {
+    height: 50px;
+    width: 300px;
+    background: transparent;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 0 10px;
+    color: #fff;
 } 
 
-.select-btn button {
-    background-color: rgb(229, 9, 20);
-    padding: 3px 10px;
-    border-radius: 5px;
+.email-signup input::placeholder {
+    color: gray;
+    font-size: 15px;
+}
+
+.email-signup button {
+    background: #db0001;
     color: #fff;
+    border-radius: 4px;
+    height: 50px;
     border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    cursor: pointer;
 }
 
-.select-btn button:hover, .title-btn button:hover {
-    background-color: rgb(200, 9, 10);
-    transition: .3s;
-}
+@media screen and (max-width: 600px) {
+    .email-signup button {
+        margin-top: 20px;
+    }
 
-.title-sub1 {
-    margin-top: 150px;
-}
+    #lang-txt {
+        display: none;
+    }
 
-.title-elements {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.title-elements h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #fff;
-}
-
-.inp-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.title-inp input {
-    height: 60px;
-    width: 400px;
-    margin-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    background-color: #000;
-    opacity: .7;
-    color: #fff;
-}
-
-.title-inp input::placeholder {
-    color: lightslategray;
-}
-
-.title-inp input:focus {
-    outline: 3px solid #fff;
-}
-
-.title-btn button {
-    height: 60px;
-    width: auto;
-    background-color: rgb(229, 9, 20);
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 25px;
-    font-weight: 700;
-    border-radius: 5px;
-    border: none;
-}
+    .logo {
+        width: 6.25rem;
+        height: 1.5rem;
+    }
+  }
