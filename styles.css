@@ -42,6 +42,11 @@ body {
     font-size: 15px;
     margin-right: 20px;
     border: 1px solid gray;
+    cursor: default;
+}
+
+.dropdown-toggle:focus {
+    outline: 2px solid #fff;
 }
 
 .lang-btn i {
@@ -196,12 +201,15 @@ footer {
     color: rgba(255, 255, 255, 0.7);
 }
 
+footer u {
+    cursor: pointer;
+}
+
 .footer-lists {
     display: flex;
     text-decoration: underline;
     font-size: 0.875rem;
     font-weight: 400;
-    cursor: pointer;
     margin: 20px 0;
 }
 
@@ -212,6 +220,8 @@ ul {
 
 ul li {
     margin-top: 10px;
+    width: fit-content;
+    cursor: pointer;
 }
 
 .lang-btn-txt {
@@ -220,6 +230,7 @@ ul li {
 
 #footer-lang-btn {
     margin-bottom: 20px;
+    cursor: default;
 }
 
 .footer-text {
